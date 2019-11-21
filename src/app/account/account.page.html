@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Account</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="profile">
+  <ion-card no-margin>
+    <ion-card-content class="bg-profile">
+        <ion-avatar slot="start" class="user-avatar">
+          <img src="assets/avatars/zzy824.jpeg">
+        </ion-avatar>
+      <h1 class="fw500">zzy</h1>
+      <ion-button icon-left color="secondary">
+        <ion-icon name="photos"></ion-icon> 
+        Edit Avatar
+      </ion-button>
+    </ion-card-content>
+  
+    <ion-grid fixed no-padding>
+      <ion-row>
+        <ion-col size="12" padding>
+
+          <ion-list margin-bottom>
+            <ion-list-header color="light">
+              <ion-label class="fw700">Account Information</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label color="dark">Full Name:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex..: Zhengyuan Zhu"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label color="dark">Email:</ion-label>
+              <ion-input inputmode="email" placeholder="Ex.: zzy824@gmail.com"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label color="dark">Address:</ion-label>
+              <ion-input inputmode="text" placeholder="Ex.: 701 S Nedderman Dr, Arlington, TX 76019"></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <ion-list margin-bottom>
+              <ion-list-header color="light">
+                <ion-label class="fw700">Favourite Research Area</ion-label>
+              </ion-list-header>
+  
+              <ion-item>
+                <ion-label>Computer Vision</ion-label>
+                <ion-select multiple="true" cancelText="Cancel" okText="Confirm">
+                  <ion-select-option value="bacon">Object Recognition</ion-select-option>
+                  <ion-select-option value="olives">Scene Understanding</ion-select-option>
+                  <ion-select-option value="xcheese">Activity Recognition</ion-select-option>
+                  <ion-select-option value="peppers">Active Vision</ion-select-option>
+                  <ion-select-option value="onions">Visual Data Mining</ion-select-option>
+                </ion-select>
+              </ion-item>
+      
+              <ion-item>
+                <ion-label>Natural Language Processing</ion-label>
+                <ion-select multiple="true">
+                  <ion-select-option value="bird">Parsing</ion-select-option>
+                  <ion-select-option value="cat">Machine translation</ion-select-option>
+                  <ion-select-option value="dog">Speech Recognition</ion-select-option>
+                  <ion-select-option value="honeybadger">Context Modeling. Dialog Systems</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button size="large" expand="full" color="dark" (click)="sendData()" no-margin>Update</ion-button>
+  </ion-card>
+</ion-content>
+  

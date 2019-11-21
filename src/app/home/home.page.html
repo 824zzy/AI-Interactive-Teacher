@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Home</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="presentPopover($event)">
+          <ion-icon slot="icon-only" name="more"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <!-- sample:list -->
+  <ion-list> 
+    <ion-item>
+      <ion-icon slot="start" name="people"></ion-icon>
+      <ion-label>Image Recognition</ion-label> 
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="people"></ion-icon>
+      <ion-label>Image Classifier</ion-label> 
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="people"></ion-icon>
+      <ion-label>Predict Number</ion-label> 
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="people"></ion-icon>
+      <ion-label>Video Classifier</ion-label> 
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="goBack()">
+    Click me
+  </ion-button>
+</ion-content>
+  
+<ion-router-outlet main></ion-router-outlet>

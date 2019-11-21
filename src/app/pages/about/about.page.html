@@ -1,0 +1,54 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content fullscreen>
+    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+      <ion-slide>
+        <img src="assets/img/about-tensorflow.png" class="slide-image" />
+        <h2 class="slide-title">
+          Welcome to
+          <b>AI interactive teacher</b>
+        </h2>
+        <p>
+          The
+          <b>ionic app</b> is a practical preview of the machine learning technologies in action, and a demonstration of proper demos
+          in use.
+        </p>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/about-overview.png" class="slide-image" />
+        <h2 class="slide-title">Why is AI interacitve techer?</h2>
+        <p>
+          The purpose of this AI interactive teacher is to assist teachers as they prepare students to take AI courses in the online system.
+          The Interactive Demo(Demo) is a practice tool designed to allow students to practice before taking a course. 
+          This app was designed to help teachers guide students through the Demo,
+          ensuring that students practice all the tools and functionality available.
+        </p>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/about-classification.png" class="slide-image" />
+        <h2 class="slide-title">What is AI technology?</h2>
+        <p>
+          In computer science, artificial intelligence (AI), sometimes called machine intelligence, 
+          is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. 
+        </p>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/about-brain.png" class="slide-image" />
+        <h2 class="slide-title">Ready to Play?</h2>
+        <ion-button fill="clear" (click)="startApp()">
+          Continue
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+  

@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goBack()">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon> </ion-button>
+        </ion-buttons>
+        <ion-title>Video Classification</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="presentPopover($event)">
+            <ion-icon slot="icon-only" name="more"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<app-spinner [loading]="loading"></app-spinner>
+
+<ion-content padding>
+  <ion-label><b> Current video stream: </b></ion-label>
+  <video #video width="320" height="240" autoplay class="video"></video>
+  <ion-card *ngIf="!loading && results && results.length">
+    <ion-card-header>
+      Predictions:
+    </ion-card-header>
+    <ion-card-content *ngFor="let result of results"
+      >{{ result.label }} {{ result.confidence }}</ion-card-content
+    >
+  </ion-card>
+</ion-content>

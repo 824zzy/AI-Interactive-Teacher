@@ -1,0 +1,16 @@
+<app-header [header]="header"></app-header>
+
+<app-spinner [loading]="loading"></app-spinner>
+
+<ion-content *ngIf="!loading" padding>
+  <ion-card padding>
+    <canvas
+      class="draw-area"
+      drawable
+      (newImage)="predict($event)"
+      width="140"
+      height="140"
+    ></canvas>
+    <!--<ion-button color="danger" (click)="clear()">Erase</ion-button>-->
+  </ion-card>
+</ion-content>

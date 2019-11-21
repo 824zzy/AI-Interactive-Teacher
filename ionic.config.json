@@ -1,0 +1,7 @@
+{
+  "name": "ml-examples",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,12 @@
+.active {
+  color: var(--ion-color-primary);
+  ion-icon {
+    color: var(--ion-color-primary);
+  }
+}
+
+:host {
+  ion-content {
+    --background: linear-gradient(-135deg, var(--ion-color-medium), var(--ion-color-light))
+  }
+}

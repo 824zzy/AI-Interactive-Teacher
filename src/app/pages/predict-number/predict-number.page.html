@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goBack()">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon> </ion-button>
+        </ion-buttons>
+        <ion-title>Handwriting Recognition</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="presentPopover($event)">
+            <ion-icon slot="icon-only" name="more"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<app-spinner [loading]="loading"></app-spinner>
+
+<ion-content padding>
+  <ion-card padding>
+    <div *ngIf="!loading" style="text-align: center;">
+      <h3>Draw a number between 0 to 9</h3>
+      <canvas
+        class="draw-area"
+        drawable
+        (newImage)="predict($event)"
+        width="280"
+        height="280"
+      ></canvas>
+      <br>
+      <ion-button color="danger" (click)="clear()">Erase</ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card *ngIf="!loading && predictedNumber">
+    <ion-card-header>
+      Predicted Number:
+    </ion-card-header>
+    <ion-card-content>{{ predictedNumber }}</ion-card-content>
+  </ion-card>
+</ion-content>

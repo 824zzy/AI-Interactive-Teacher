@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goBack()">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon> </ion-button>
+        </ion-buttons>
+        <ion-title>Image Classification</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="presentPopover($event)">
+            <ion-icon slot="icon-only" name="more"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<app-spinner [loading]="loading"></app-spinner>
+
+<ion-content padding>
+  <ion-label>Upload an image for classification</ion-label>
+  <ion-card *ngIf="!loading">
+    <ion-card-header>
+      <input type="file" (change)="readURL($event);"/>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label><b>MobileNet results:</b></ion-label>
+      <ng-container *ngIf="predictions && predictions.length">
+        <div *ngFor="let prediction of predictions">
+          Prediction: {{ prediction.label }} {{prediction.confidence}}
+        </div>
+      </ng-container>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-label>You image is:</ion-label>
+  <img
+    *ngIf="imageSrc"
+    id="blah"
+    [src]="imageSrc"
+    alt="your image"
+    (load)="predict($event.target)"
+  />
+</ion-content>
