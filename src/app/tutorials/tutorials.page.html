@@ -34,12 +34,14 @@
       </ion-item-divider>
 
       <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
-        <ion-item routerLink="/app/tabs/schedule/session/{{session.id}}">
+        <!-- TODO: <ion-item (click)routerLink=" /app/tabs/schedule/session/{{session.id}}"> -->
+        <ion-item (click)="tutorialClick(session.tracks)">
           <ion-label>
             <h3>{{session.name}}</h3>
             <p>
               {{session.timeStart}} &mdash; {{session.timeEnd}}: {{session.location}}
             </p>
+            
           </ion-label>
         </ion-item>
         <ion-item-options>

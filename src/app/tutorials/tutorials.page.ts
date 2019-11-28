@@ -4,12 +4,16 @@ import { UserData } from '../providers/user-data';
 import { TutorialData } from '../providers/tutorial-data';
 import { Router } from '@angular/router';
 import { TutorialFilterPage } from '../pages/tutorial-filter/tutorial-filter.page';
+// TODO: import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-tutorials',
   templateUrl: './tutorials.page.html',
   styleUrls: ['./tutorials.page.scss'],
+  providers: [InAppBrowser],
 })
+
 export class TutorialsPage implements OnInit {
   // @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
   @ViewChild('tutorialList', {}) tutorialList: IonList;
@@ -29,8 +33,16 @@ export class TutorialsPage implements OnInit {
     public modalCtrl: ModalController,
     public router: Router,
     public toastCtrl: ToastController,
-    public user: UserData
+    public user: UserData,
+    //TODO: public iab: InAppBrowser
+    public iab: InAppBrowser
   ) { }
+  
+  //TODO: route function to app browser
+  tutorialClick(tracks){
+    const browser = this.iab.create(tracks, '_blank', 'toolbar=no,location=no');
+    browser.show();
+  }
 
   ngOnInit() {
     this.updateTutorial();
