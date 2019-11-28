@@ -11,7 +11,7 @@
                 "timeStart": "AI",
                 "timeEnd": "CV",
                 "location": "See related documents",
-                "tracks": ["Food"],
+                "tracks": ["https://marutitech.com/working-image-recognition/"],
                 "id": "1"
               },
               {
@@ -19,7 +19,7 @@
                 "timeStart": "AI",
                 "timeEnd": "CV",
                 "location": "See related documents",
-                "tracks": ["Food"],
+                "tracks": ["https://medium.com/@tifa2up/image-classification-using-deep-neural-networks-a-beginner-friendly-approach-using-tensorflow-94b0a090ccd4"],
                 "id": "1"
               },
               {
@@ -27,7 +27,7 @@
                 "timeStart": "AI",
                 "timeEnd": "CV",
                 "location": "See related documents",
-                "tracks": ["Food"],
+                "tracks": ["https://blog.coast.ai/five-video-classification-methods-implemented-in-keras-and-tensorflow-99cad29cc0b5"],
                 "id": "1"
               },
               {
@@ -35,7 +35,7 @@
                 "timeStart": "AI",
                 "timeEnd": "CV",
                 "location": "See related documents",
-                "tracks": ["Food"],
+                "tracks": ["https://towardsdatascience.com/https-medium-com-rachelwiles-have-we-solved-the-problem-of-handwriting-recognition-712e279f373b"],
                 "id": "1"
               }
             ]
@@ -44,33 +44,53 @@
             "time": "Natural Language Processing",
             "sessions": [
               {
-                "name": "PlaceHolder",
+                "name": "Machine Translation",
                 "location": "See related documents",
                 "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
                 "speakerNames": ["Ted Turtle"],
                 "timeStart": "AI",
                 "timeEnd": "NLP",
-                "tracks": ["Ionic"],
+                "tracks": ["https://machinelearningmastery.com/introduction-neural-machine-translation/"],
                 "id": "2"
               },
               {
-                "name": "PlaceHolder",
+                "name": "Knowledge Graph",
                 "location": "See related documents",
                 "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
                 "speakerNames": ["Ted Turtle"],
                 "timeStart": "AI",
                 "timeEnd": "NLP",
-                "tracks": ["Ionic"],
+                "tracks": ["https://neilpatel.com/blog/the-beginners-guide-to-the-googles-knowledge-graph/"],
                 "id": "2"
               },
               {
-                "name": "PlaceHolder",
+                "name": "Sentiment Analysis",
                 "location": "See related documents",
                 "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
                 "speakerNames": ["Ted Turtle"],
                 "timeStart": "AI",
                 "timeEnd": "NLP",
-                "tracks": ["Ionic"],
+                "tracks": ["https://monkeylearn.com/sentiment-analysis/"],
+                "id": "2"
+              },
+              {
+                "name": "Dialogue System",
+                "location": "See related documents",
+                "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+                "speakerNames": ["Ted Turtle"],
+                "timeStart": "AI",
+                "timeEnd": "NLP",
+                "tracks": ["https://www.nap.edu/read/2308/chapter/28"],
+                "id": "2"
+              },
+              {
+                "name": "Automatic Text Summarization",
+                "location": "See related documents",
+                "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+                "speakerNames": ["Ted Turtle"],
+                "timeStart": "AI",
+                "timeEnd": "NLP",
+                "tracks": ["https://towardsdatascience.com/automatic-text-summarization-simplified-3b7c10c4093a"],
                 "id": "2"
               }
             ]
