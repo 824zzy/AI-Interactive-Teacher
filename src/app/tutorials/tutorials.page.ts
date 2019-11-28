@@ -18,6 +18,7 @@ import { InAppBrowser } from "@ionic-native/in-app-browser/ngx";
   styleUrls: ["./tutorials.page.scss"],
   providers: [InAppBrowser]
 })
+
 export class TutorialsPage implements OnInit {
   // @ViewChild('scheduleList', { static: true }) scheduleList: IonList;
   @ViewChild("tutorialList", {}) tutorialList: IonList;
