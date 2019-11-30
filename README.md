@@ -1,6 +1,7 @@
 # AI Interactive Teacher
 
 ## Install
+
 - Download Node.js and install ：`https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi`;
 - Clone source code to local, open with VSCode;
 - Run the command in VSCode command：`npm i`, download related dependencies;
@@ -8,10 +9,12 @@
 - Access address: `http://localhost:80**`, you can open the AI Iteractive Teacher system page
 
 ## Project Description
+
 The AI ​​Iteractive Teacher application is an AI technology teaching program based on ionic and TensorFlow.js. The main part of AI Iteractive Teacher consists of four unique features including image classification demo, image recognition demo, digital prediction demo and video classification demo. There are also tutorial learning and user management modules.
 
 ## Project structure
-![project struct](src\assets\img\readme-proj-structure.png)
+
+![project struct](./src/assets/img/readme-proj-structure.png)
 
 ## Demo Screenshoots
 
