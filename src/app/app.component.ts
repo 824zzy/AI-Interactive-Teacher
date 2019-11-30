@@ -37,12 +37,12 @@ export class AppComponent implements OnInit{
       url: '/video-classifier',
       icon: 'play-circle'
     },
-    {
-      title: 'Pix2pix',
-      url: '/pix2pix',
-      // 
-      icon: 'contacts'
-    },
+    // {
+    //   title: 'Pix2pix',
+    //   url: '/pix2pix',
+    //   // 
+    //   icon: 'contacts'
+    // },
   ];
 
   constructor(
