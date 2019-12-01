@@ -70,6 +70,7 @@ With the rapid development of AI technology in recent years, more and more AI te
 ## Demo video and slides
 
 [Youtube video](https://www.youtube.com/watch?v=mOdNy_5uEXA)
+
 [Google Slides](https://docs.google.com/presentation/d/12DS54S2c_rJLAMLo-wz5fPpsLQ1L9zVnckGMmmMcuEY/edit#slide=id.g7091fb960e_0_7)
 
 ## Contributor
